@@ -9,6 +9,6 @@ import { LoggingMiddleware } from '../middlewares/logging.middleware';
 })
 export class ExercisesModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(LoggingMiddleware).forRoutes('*'); // Applique le middleware à toutes les routes de ExercisesModule
+    consumer.apply(LoggingMiddleware).forRoutes('*');
   }
 }
